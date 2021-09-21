@@ -1,0 +1,14 @@
+.parkingSpaces {
+ 
+}
+
+$separator: 6px solid white;
+
+.parkingSpace {
+  border-left: $separator;
+  height: 300px;
+
+  &:last-child {
+    border-right: $separator;
+  }
+}

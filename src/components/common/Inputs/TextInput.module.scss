@@ -1,0 +1,16 @@
+.inputText {
+  height: 100%;
+  min-height: $input-height;
+  border: $input-border-width solid $gray--light;
+  border-radius: $input-border-radius;
+  box-shadow: none;
+  outline: none;
+  padding: $input-padding-y $input-padding-x;
+
+
+  &:active,
+  &:focus {
+    background-color: $white;
+    border: $input-border-width solid $secondary;
+  }
+}

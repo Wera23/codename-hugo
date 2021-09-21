@@ -1,0 +1,159 @@
+@mixin centralize {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+$size-circle: 30px;
+$size-arrow: 26px;
+$lightBorder: rgba(255, 255, 255, 0.7);
+
+.reservation-close {
+  width: 90%;
+  font-size: 24px;
+  color: $secondary;
+}
+
+.reservation-required {
+  color: $red;
+  font-size: 12px;
+  margin-left: 20px;
+  font-weight: 300;
+}
+
+.calendar {
+  padding: 25px 20px;
+  padding-bottom: 15px;
+  margin-top: 5px;
+  margin-bottom: 40px;
+  background-color: $primary;
+  box-sizing: border-box !important;
+}
+
+.calendar-month_header {
+  @include centralize;
+}
+
+.calendar-month_header_title {
+  color: $white;
+  margin: 0 20px;
+}
+
+.calendar-header_button {
+  @include centralize;
+  background-color: $primary;
+  height: $size-arrow;
+  width: $size-arrow;
+  color: $white;
+  outline: none;
+  font-size: $size-arrow;
+  font-weight: 300;
+  border-radius: 50%;
+  border: 1px solid $white;
+
+  &:hover {
+    color: $lightBorder;
+  }
+}
+
+.calendar-days_of_week {
+  @include centralize;
+  justify-content: space-between;
+  color: $white;
+  font-size: 14px;
+  font-weight: 300;
+  opacity: 0.6;
+  margin: 20px 0;
+}
+
+.calendar-days_of_week_day {
+  flex: 1;
+  text-align: center;
+
+  &.is-weekend {
+    color: $orange;
+  }
+}
+
+.calendar-month {
+  margin-top: 20px;
+}
+
+.calendar-week {
+  display: flex;
+  justify-content: space-between;
+}
+
+.calendar-week-day {
+  flex: 1;
+  color: $white;
+  font-weight: 300;
+  background-color: $primary;
+  margin: 10px;
+  padding: 0;
+  width: $size-circle;
+  height: $size-circle;
+  border: 1px solid transparent;
+
+  &:hover {
+    border: 1px dashed $lightBorder;
+    border-radius: 50%;
+  }
+
+  &.is-today {
+    width: $size-circle;
+    height: $size-circle;
+    border-radius: 50%;
+    border: 1px solid $white;
+  }
+
+  &.is-next_month,
+  &.is-prev_month {
+    opacity: 0.6;
+  }
+
+  &.is-weekend {
+    color: $orange;
+
+    &:hover {
+      border: 1px dashed $orange;
+      border-radius: 50%;
+    }
+  }
+
+  &.is-selected,
+  &.is-highlighted {
+    border: 1px dashed $orange;
+    border-radius: 50%;
+  }
+}
+
+.ReactModal__Overlay {
+  @include centralize;
+  z-index: 5;
+}
+
+.ReactModal__Content {
+  width: 40%;
+  border-radius: 0;
+  inset-block: auto !important;
+  inset-inline: auto !important;
+}
+
+@media (max-width: 1375px) {
+  .ReactModal__Content {
+    width: 60%;
+  }
+}
+
+@media (max-width: 900px) {
+  .ReactModal__Content {
+    width: 75%;
+  }
+}
+
+@media (max-width: 650px) {
+  .ReactModal__Content {
+    width: 85%;
+  }
+}

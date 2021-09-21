@@ -1,0 +1,62 @@
+.input-icon-arrow {
+  font-size: 12px;
+  color: $primary;
+}
+
+.react-select-container {
+  width: 100%;
+
+  .react-select-custom__menu {
+    z-index: 5;
+  }
+
+  .react-select-custom__indicator svg {
+    display: none;
+  }
+
+  .react-select-custom__option {
+    background-color: $white;
+    color: $gray--dark;
+    padding: 14px;
+
+    &:hover {
+      background-color: $gray--light;
+    }
+  }
+
+  .react-select-custom__option--is-selected {
+    background-color: $gray--silver !important;
+  }
+
+  .react-select-custom__control {
+    height: 100%;
+    min-height: $input-height;
+    border: $input-border-width solid $gray--light;
+    border-radius: $input-border-radius;
+    box-shadow: none;
+    outline: none;
+    padding: $input-padding-y $input-padding-x;
+  }
+
+  .react-select-custom__control--is-focused,
+  .react-select-custom__control--is-active {
+    &,
+    &:hover {
+      border: $input-border-width solid $secondary;
+    }
+  }
+}
+
+.react-select-custom__control .react-select-custom__value-container {
+  padding: 0;
+}
+
+.react-select-custom__indicator-separator {
+  display: none;
+}
+
+.react-select-custom__placeholder {
+  font-size: 14px;
+  letter-spacing: $label-letter-spacing;
+  line-height: 17px;
+}

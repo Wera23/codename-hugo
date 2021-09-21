@@ -1,0 +1,66 @@
+$h4-font-size: 20px;
+$h3-font-size: 22px;
+
+
+$primary: #bf1682;
+$secondary: #36003a;
+$gray--light: #f5f5fa;
+$gray--blue: #ebebf5;
+$gray--silver: #e6e3e7;
+$gray--dark: #292b2c;
+$green: #c7f032;
+$red: #ff0000dc;
+$white: white;
+$orange: #FF9640;
+$dark: #212529;
+
+$theme-colors: (
+  primary: $primary,
+  secondary: $secondary,
+  gray: $gray--light,
+  silver: $gray--blue,
+  available: $green,
+  unavailable: $red,
+  green: $green,
+  white: $white,
+);
+
+//buttons
+
+$btn-font-size: 13px;
+$btn-border-radius: 50px;
+$btn-padding-y: 8px;
+$btn-padding-x: 12px;
+
+$btn-violet-background: $secondary;
+$btn-violet-border: $secondary;
+$btn-violet-hover-background: lighten($secondary, 5%);
+$btn-violet-hover-border: lighten($secondary, 5%);
+
+$btn-orange-background: $orange;
+$btn-orange-border: $orange;
+$btn-orange-hover-background: darken($orange, 10%);
+$btn-orange-hover-border: darken($orange, 10%);
+
+$btn-pink-background: $primary;
+$btn-pink-border: $primary;
+$btn-pink-hover-background: darken($primary, 5%);
+$btn-pink-hover-border: darken($primary, 5%);
+
+
+//inputs
+
+$input-bg: $white;
+$input-color: $secondary;
+$form-group-margin-bottom: 0;
+$input-font-size: 14px;
+$input-placeholder-color: rgba(21, 21, 21, 0.5);
+$input-border-color: $secondary;
+$input-border-width: 1px;
+$input-focus-box-shadow: none;
+$input-focus-color: $secondary;
+$label-letter-spacing: 0.08em;
+$input-height: 45px;
+$input-border-radius: 5px;
+$input-padding-x: 0.875rem;
+$input-padding-y: 0.375rem;

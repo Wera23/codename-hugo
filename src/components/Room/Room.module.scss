@@ -1,0 +1,36 @@
+.room {
+  box-sizing: border-box;
+  background-image: url("../../assets/images/roomBg.jpg");
+  background-size: cover;
+  min-height: 50vh;
+  opacity: 0.9;
+
+  &:hover{
+    opacity: 1;
+  }
+}
+
+.deskIcon {
+  font-size: 46px;
+}
+
+.deskName {
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.tooltip {
+  background-color: $white;
+  font-size: 12px;
+  font-weight: 300;
+  white-space: nowrap;
+  padding: 5px;
+}
+
+.iconAvailable {
+  color: $green;
+}
+
+.iconUnavailable {
+  color: $red;
+}

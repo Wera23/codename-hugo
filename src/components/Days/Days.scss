@@ -1,0 +1,60 @@
+.calender {
+  box-sizing: border-box;
+  overflow-y: hidden;
+}
+
+.tabDayName {
+  border: none;
+}
+
+.react-tabs {
+  margin-top: 30px;
+}
+
+.react-tabs__tab-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border: none;
+  margin-bottom: 30px;
+}
+
+.react-tabs__tab {
+  font-weight: 300;
+  border: 0;
+  padding: 0 20px;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  opacity: 0.7;
+}
+
+.react-tabs__tab--selected {
+  border: none;
+  color: $primary;
+  background-color: transparent;
+  font-weight: 400;
+  opacity: 1;
+}
+
+.slider-arrows {
+  top: -12px;
+  font-size: 20px;
+  color: $secondary;
+  background-color: $gray--light;
+}
+
+.slider-left-arrow {
+  left: 45%;
+  z-index: 4;
+}
+
+.slider-right-arrow {
+  right: 45%;
+}
+
+.slick-slider {
+  border: none !important;
+  outline: none !important;
+}
